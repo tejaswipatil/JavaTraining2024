@@ -1,0 +1,18 @@
+package Core_Workplace;
+import java.util.Scanner;
+
+public class Message{
+ static String generateMessage(String name){
+   return "Hello" + name + ",Welcome to the java world!";
+}
+ 
+public static void main(String[] args){
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("Enter your name");
+  String name = scanner.nextLine();
+  
+  String result = Message.generateMessage(name);
+  System.out.println(result);
+ }
+}
+
