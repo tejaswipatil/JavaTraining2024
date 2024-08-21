@@ -1,0 +1,25 @@
+package CoreJava_Workplace;
+
+public class Main {
+	static String generateString(int num)
+	{
+		if(num<100 || num>999)
+		{
+			return "Number must be a three digit number";
+		}
+	int digit1 = num /100;
+	int digit2 = (num /10) % 10;
+	int digit3 = num % 10;
+	return "("+digit1+"X100) + ("+digit2+"X10) + " + digit3;
+}
+
+	public static void main(String[] args) {
+		 
+		// TODO Auto-generated method stub
+		int num = 951;
+		String result = generateString(num);
+		System.out.println(result);
+
+	}
+
+}
